@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Home</title>
+    <title>Muhammad Nur Tauhid Anfasi - Personal Profile</title>
     <meta name="format-detection" content="telephone=no">
     <!-- FIX 1: Viewport Zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,9 @@
   </head>
   <body>
     <!-- FIX 5: Removed IE8 Panel Div -->
-    <div class="preloader-logo">
+    <div class="preloader">
+      <div class="preloader-logo">
+        <!-- LOGO TEXT - PRELOADER -->
         <span class="font-weight-bold text-uppercase" style="font-size: 28px; letter-spacing: 2px; color: #212121;">Tauhid</span><span class="text-primary" style="font-size: 32px;">.</span>
       </div>
       <div class="preloader-body">
@@ -27,7 +29,7 @@
       </div>
     </div>
     <div class="page">
-      <!-- Page Header-->
+      <!-- Page Header (Banner removed for clean look) -->
       <header class="section novi-background page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
@@ -38,26 +40,26 @@
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand-->
+                  <!-- RD Navbar Brand - LOGO TEXT -->
                   <a class="rd-navbar-brand" href="index.html">
                     <span class="font-weight-bold text-uppercase" style="font-size: 24px; letter-spacing: 2px; color: #212121;">Tauhid</span><span class="text-primary" style="font-size: 28px;">.</span>
                   </a>
+                </div>
                 <div class="rd-navbar-collapse">
                   <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
                   <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
                     <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-phone"></span></div>
+                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-email"></span></div>
                       <div class="unit-body">
                         <ul class="list-0">
-                          <li><a class="link-default" href="tel:#">1-800-1234-567</a></li>
-                          <li><a class="link-default" href="tel:#">1-800-8763-765</a></li>
+                          <li><a class="link-default" href="mailto:#">contact@example.com</a></li>
                         </ul>
                       </div>
                     </article>
                     <article class="unit align-items-center">
                       <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker"></span></div>
-                      <div class="unit-body"><a class="link-default" href="tel:#">2130 Fulton Street <br> San Diego, CA 94117-1080</a></div>
-                    </article><a class="button button-gray-bordered button-winona" href="#">Request a call</a>
+                      <div class="unit-body"><a class="link-default" href="#">Indonesia</a></div>
+                    </article><a class="button button-gray-bordered button-winona" href="contacts.html">Hire Me</a>
                   </div>
                 </div>
               </div>
@@ -69,9 +71,9 @@
                   <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Me</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Portfolio</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
                     </li>
@@ -82,428 +84,139 @@
           </nav>
         </div>
       </header>
-      <section class="section swiper-container swiper-slider swiper-slider-minimal" data-loop="true" data-slide-effect="fade" data-autoplay="4759" data-simulate-touch="true">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide_video" data-slide-bg="images/slider-minimal-slide-1-1920x968.jpg">
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Offering Diverse</div>
+      <!-- Swiper-->
+      <!-- FIX 2: Added inline background color fallback #363636 so text remains readable even if image is missing -->
+      <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="horizontal">
+        <div class="swiper-wrapper text-left">
+          <!-- Slide 1 -->
+          <div class="swiper-slide context-dark" data-slide-bg="images/slider-1-1920x968.jpg" style="background-color: #363636; background-blend-mode: multiply;">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2 class="slider-title-profile" data-caption-animate="fadeInUp" data-caption-delay="50">Hello, I am</h2>
+                    <!-- FIX 2: H1 for Main Name -->
+                    <h1 class="slider-title" data-caption-animate="fadeInUp" data-caption-delay="150" style="font-size: 3rem;">Muhammad Nur Tauhid Anfasi</h1>
+                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">Process Automation Specialist with experience at PT Bukit Makmur Mandiri Utama (BUMA). Skilled in Python, SAP S/4 HANA automation, and VBA macros to streamline operations.</p><a class="button button-primary button-winona" href="about-us.html" data-caption-animate="fadeInUp" data-caption-delay="300">More About Me</a>
+                  </div>
                 </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Properties</span></h1>
-                <p class="text-white wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">inHouse provides you with lots of great properties throughout the USA so that you could easily choose your dream property.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View Properties</a></div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide" data-slide-bg="images/slider-minimal-slide-2-1920x968.jpg">
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Easily</div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide context-dark" data-slide-bg="images/slider-2-1920x968.jpg" style="background-color: #2b3a42; background-blend-mode: multiply;">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2 class="slider-title-profile" data-caption-animate="fadeInUp" data-caption-delay="50">Automating the Future</h2>
+                    <h1 class="slider-title" data-caption-animate="fadeInUp" data-caption-delay="150" style="font-size: 3rem;">Data Solutions & Scripting</h1>
+                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">From developing automated stock screeners and WhatsApp bot agents to complex data processing, I build tools that work efficiently.</p><a class="button button-primary button-winona" href="typography.html" data-caption-animate="fadeInUp" data-caption-delay="300">View Portfolio</a>
+                  </div>
                 </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Rent & Sale</span></h1>
-                <p class="text-white wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">With the help of our services and property management solutions, you can rent or sell any house or apartment.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View properties</a></div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide" data-slide-bg="images/slider-minimal-slide-3-1920x968.jpg">
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">More Than 20 Years of</div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide context-dark" data-slide-bg="images/slider-3-1920x968.jpg" style="background-color: #42302b; background-blend-mode: multiply;">
+            <div class="swiper-slide-caption section-md">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2 class="slider-title-profile" data-caption-animate="fadeInUp" data-caption-delay="50">Dedicated & Analytical</h2>
+                    <h1 class="slider-title" data-caption-animate="fadeInUp" data-caption-delay="150" style="font-size: 3rem;">Professional Growth</h1>
+                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">Constantly learning and exploring new technologies to drive efficiency and operational excellence in every project I handle.</p><a class="button button-primary button-winona" href="contacts.html" data-caption-animate="fadeInUp" data-caption-delay="300">Contact Me</a>
+                  </div>
                 </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Experience</span></h1>
-                <p class="text-white wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">Founded in 1989, our company is a team of renowned property management and real estate experts always ready to help you.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View properties</a></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination-outer container">
-          <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
-        </div>
-      </section>
-      <section class="section novi-background section-md text-center">
-        <div class="container">
-          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
-          <h2 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Popular properties</span></h2>
-          <div class="row row-lg-50 row-35 offset-top-2">
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <!-- FIX 4: loading lazy -->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">5619 Walnut Hill Ln, Dallas, TX 75229</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">$1500/mon</a></li>
-                  <li>30 Sq. Ft.</li>
-                  <li>3 Bedrooms</li>
-                </ul>
-                <p>A comfortable residential property located in a quiet and cozy area.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <!-- FIX 4: loading lazy -->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">1808 Bolingbroke Pl, Fort Worth, TX 76140</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">$1300/mon</a></li>
-                  <li>40 Sq. Ft.</li>
-                  <li>2 Bedrooms</li>
-                </ul>
-                <p>Perfect for those who love both city life and the countryside.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <!-- FIX 4: loading lazy -->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-3-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">924 Bel Air Rd, Los Angeles, CA 90077</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">1800/mon</a></li>
-                  <li>50 Sq. Ft.</li>
-                  <li>4 Bedrooms</li>
-                </ul>
-                <p>Located in 5 mins from downtown, this property is great for anyone.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <!-- FIX 4: loading lazy -->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-4-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">13510 W Cheery Lynn Rd, Avondale, AZ 85392</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">$2700/mon</a></li>
-                  <li>90 Sq. Ft.</li>
-                  <li>2 Bedrooms</li>
-                </ul>
-                <p>A luxury mansion for people who enjoy the high-end amenities.</p>
-              </article>
-            </div>
-            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view More properties</a></div>
-          </div>
-        </div>
-      </section>
-      <section class="section novi-background section-lg bg-gray-100">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-user wow fadeIn"></div>
-                <div class="box-minimal-main wow-outer">
-                  <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                  <h3 class="box-minimal-title wow slideInDown">Qualified Employees</h3>
-                  <p class="wow fadeInUpSmall">Our team consists of more than 20 qualified and experienced real estate brokers and property managers ready to help you.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-bubble-text wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                  <h3 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Free Consultations</h3>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".1s">Our acquaintance with a client always begins with a free consultation to find out what kind of property they are looking for.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-star wow fadeIn" data-wow-delay=".2s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                  <h3 class="box-minimal-title wow slideInDown" data-wow-delay=".2s">100% Guaranteed</h3>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".2s">All the results that you get from our realtors are 100% guaranteed to offer you the best choice of properties throughout the USA.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination"></div>
       </section>
       <!-- Services-->
-      <section class="section novi-background section-lg text-center">
+      <section class="section novi-background section-md text-center">
         <div class="container">
-          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
-          <h2 class="text-uppercase">Residential property categories</h2>
-          <p><span class="text-width-1">At our agency, we work with various types of residential real estate property. You can find out more about our properties by browsing our website.</span></p>
-          <div class="row row-35 row-xxl-70 offset-top-2">
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <!-- FIX 4: loading lazy -->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-1-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
-                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                <h3 class="thumbnail-light-title"><a href="#">Single-Family Homes</a></h3>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <!-- FIX 4: loading lazy -->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-2-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
-                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                <h3 class="thumbnail-light-title"><a href="#">Townhouses</a></h3>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <!-- FIX 4: loading lazy -->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-3-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
-                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                <h3 class="thumbnail-light-title"><a href="#">Multi-Family Homes</a></h3>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <!-- FIX 4: loading lazy -->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-4-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
-                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
-                <h3 class="thumbnail-light-title"><a href="#">Condominiums</a></h3>
-              </article>
-            </div>
-            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view all properties</a></div>
-          </div>
-        </div>
-      </section>
-      <section class="section novi-background section-lg text-center bg-gray-100">
-        <div class="container">
-          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
-          <h2 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h2>
-          <div class="row row-lg-50 row-35 row-xxl-70 justify-content-center justify-content-lg-start">
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft">
-                <!-- FIX 4: loading lazy -->
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
-                  <h3 class="profile-creative-title"><a href="#">Nathalie Porter</a></h3>
-                  <p class="profile-creative-position">Founder, Broker</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>Ms. Porter founded our company in 1989 with a vision to help guests and residents of the USA to easily find and buy or rent real estate in all 50 states.</p>
+          <!-- FIX 2: H3 -> H2 -->
+          <h2 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInUp">My Core Skills</span></h2>
+          <div class="row row-lg-50 row-35 offset-top-2">
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-370x271.jpg" alt="" width="370" height="271" loading="lazy"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Python & Scripting</a></h4>
+                <div class="post-modern-time">
+                  <time datetime="2019-04-05">Data Automation</time>
                 </div>
               </article>
             </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <!-- FIX 4: loading lazy -->
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
-                  <h3 class="profile-creative-title"><a href="#">John Thompson</a></h3>
-                  <p class="profile-creative-position">Sales Associate</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>John has been in sales and marketing for the past 15 years. He has excellent knowledge about the local market both residential and commercial.</p>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInUp"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-370x271.jpg" alt="" width="370" height="271" loading="lazy"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">SAP S/4 HANA</a></h4>
+                <div class="post-modern-time">
+                  <time datetime="2019-04-05">System Integration</time>
                 </div>
               </article>
             </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft">
-                <!-- FIX 4: loading lazy -->
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
-                  <h3 class="profile-creative-title"><a href="#">Brian Payne</a></h3>
-                  <p class="profile-creative-position">Realtor</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>Brian is not only a Licensed Realtor but also holds the Title Producers and Mortgage Licenses, which makes him a very knowledgeable real estate expert.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <!-- FIX 4: loading lazy -->
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
-                  <h3 class="profile-creative-title"><a href="#">Marie Fernandez</a></h3>
-                  <p class="profile-creative-position">Broker</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>Marie’s goal is to provide clients with the highest level of marketing expertise and customer service to help them reach their uppermost real estate goals.</p>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInRight"><a class="post-modern-media" href="#"><img src="images/grid-blog-3-370x271.jpg" alt="" width="370" height="271" loading="lazy"/></a>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Excel VBA Macros</a></h4>
+                <div class="post-modern-time">
+                  <time datetime="2019-04-05">Process Optimization</time>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
-      <!-- Best offer-->
-      <section class="section novi-background section-1 bg-primary-darker text-center" style="background-image: url(images/bg-1-1920-455.jpg);">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 col-lg-7 col-xl-6">
-              <!-- FIX 2: Hierarki Heading h3 -> h2 -->
-              <h2 class="wow-outer"><span class="wow slideInDown text-uppercase">Best offers</span></h2>
-              <p class="heading-subtitle">of September</p>
-              <p class="wow-outer offset-top-4"><span class="wow slideInDown" data-wow-delay=".05s">With a variety of accountants available at our company, you can always choose one that fits your corporate requirements.</span></p>
-              <div class="wow-outer button-outer"><a class="button button-primary-white button-winona wow slideInDown" href="#" data-wow-delay=".1s">Read more</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section novi-background section-lg text-center">
-        <div class="container">
-          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
-          <h2 class="wow-outer"><span class="wow slideInDown text-uppercase">Testimonials</span></h2>
-          <!-- Owl Carousel-->
-          <div class="owl-carousel wow fadeIn" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-loop="true" data-autoplay="true" data-autoplay-speed="731" data-autoplay-timeout="4268" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <!-- FIX 4: loading lazy -->
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-6-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Albert Webb</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I have just bought an apartment in LA thanks to you and your brokers. Everything went smooth and easy, the price was quite affordable, and I’m sure I will use your services again in the future.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <!-- FIX 4: loading lazy -->
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Kelly McMillan</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I have recently sold my rental property in Nelson via inHouse. Everything about the sale was made seamless by your team. You gave me great advice about what was necessary to expedite the sale.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <!-- FIX 4: loading lazy -->
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Harold Barnett</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I really appreciate your time and expertise in helping me find and buy my current home in Seattle, WA. Hope we can do business again in the future and I will recommend you to family and friends.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <!-- FIX 4: loading lazy -->
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Bill Warner</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I have just sold a property with inHouse and I can’t thank them enough. Their team has great communication skills and they have regularly communicated with me throughout the whole process.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <!-- FIX 4: loading lazy -->
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-4-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Ann Lee</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>Your skilled team helped me make the dream of selling my old property a reality. The sale went smoothly, and I just closed on an ideal new place I am excited to call home. Thank you for your great services!</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <!-- FIX 4: loading lazy -->
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-5-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Peter Clarkson</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I have to say that inHouse has the best brokers we've ever worked with. Their professionalism, personality, attention to detail, responsiveness and ability to close the deal are outstanding!</p>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-      </section>
+      
+      <!-- Page Footer (Banner removed) -->
       <footer class="section novi-background footer-advanced bg-gray-700">
         <div class="footer-advanced-main">
           <div class="container">
             <div class="row row-50">
               <div class="col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">About Us</h5>
-                <p class="footer-advanced-text">inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
+                <h5 class="font-weight-bold text-uppercase text-white">About Me</h5>
+                <p class="footer-advanced-text">I am a professional passionate about automation, coding, and continuous learning. I specialize in bridging the gap between complex data systems and efficient daily operations.</p>
               </div>
               <div class="col-sm-7 col-md-5 col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Recent Blog Posts</h5>
+                <h5 class="font-weight-bold text-uppercase text-white">Recent Projects</h5>
                 <!-- Post Inline-->
                 <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Real Estate Guide: 7 Important Tips for Buying a Home</a></p>
+                  <p class="post-inline-title"><a href="#">Automated Stock Screener & Notification</a></p>
                   <ul class="post-inline-meta">
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
+                    <li>Python & WhatsApp Bot</li>
                   </ul>
                 </article>
                 <!-- Post Inline-->
                 <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Single-Family Homes as a Housing Option for Young Families</a></p>
+                  <p class="post-inline-title"><a href="#">SAP S/4 HANA Batch Processing</a></p>
                   <ul class="post-inline-meta"> 
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
+                    <li>VBScript & Integration</li>
                   </ul>
                 </article>
               </div>
               <div class="col-sm-5 col-md-7 col-lg-4">
                 <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
                 <div class="row row-x-10" data-lightgallery="group">
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="" loading="lazy"/>
+                  <!-- FIX 4: Tambah loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"> </div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <!-- FIX 4: loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="" loading="lazy"/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="" loading="lazy">
                       <div class="thumbnail-minimal-caption"></div></a></div>
                 </div>
               </div>
@@ -517,30 +230,30 @@
                 <ul class="list-nav"> 
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about-us.html">About</a></li>
-                  <li><a href="#">Properties</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="typography.html">Portfolio</a></li>
                   <li><a href="contacts.html">Contacts</a></li>
                 </ul>
               </div>
               <div>
                 <ul class="foter-social-links list-inline list-inline-md">
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-twitter" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-google" href="#"></a></li>
                   <li><a class="icon novi-icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
+                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-github" href="#"></a></li>
+                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-email" href="#"></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="container">
-          <hr/>
+          <hr>
         </div>
         <div class="footer-advanced-aside">
           <div class="container">
-            <div class="footer-advanced-layout"><a class="brand" href="index.html">
-              <span class="font-weight-bold text-uppercase text-white" style="font-size: 22px; letter-spacing: 2px;">Tauhid</span><span class="text-primary" style="font-size: 26px;">.</span></a>
+            <div class="footer-advanced-layout">
+              <!-- LOGO TEXT - FOOTER -->
+              <a class="brand" href="index.html">
+                <span class="font-weight-bold text-uppercase text-white" style="font-size: 22px; letter-spacing: 2px;">Tauhid</span><span class="text-primary" style="font-size: 26px;">.</span>
+              </a>
               <!-- Rights-->
               <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Muhammad Nur Tauhid Anfasi.</p>
             </div>
