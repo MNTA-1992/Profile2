@@ -3,18 +3,20 @@
   <head>
     <title>About us</title>
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <!-- FIX 1: Viewport Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
+    <!-- FIX 3: URL Font Usang -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <!-- FIX 5: Removed IE8 Panel Style -->
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- FIX 5: Removed IE8 Panel Div -->
     <div class="preloader">
       <div class="preloader-logo"><img src="images/logo-default-151x44.png" alt="" width="151" height="44" srcset="images/logo-default-151x44.png 2x"/>
       </div>
@@ -84,7 +86,8 @@
           <div class="container breadcrumbs-custom-container">
             <div class="breadcrumbs-custom-main">
               <h6 class="breadcrumbs-custom-subtitle title-decorated">About us</h6>
-              <h2 class="text-uppercase breadcrumbs-custom-title">About us</h2>
+              <!-- FIX 2: H2 diubah jadi H1 karena ini adalah Judul Utama Halaman -->
+              <h1 class="text-uppercase breadcrumbs-custom-title">About us</h1>
             </div>
             <ul class="breadcrumbs-custom-path">
               <li><a href="index.html">Home</a></li>
@@ -98,11 +101,14 @@
         <div class="container">
           <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
             <div class="col-md-10 col-lg-6 col-xl-5">
-              <h3 class="text-uppercase">Who We Are</h3>
+              <!-- FIX 2: H3 -> H2 -->
+              <h2 class="text-uppercase">Who We Are</h2>
               <p class="about-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru eiusmod tempor incididunt ut labore et.</p><a class="button button-lg button-primary button-winona" href="about-us.html">View properties</a>
             </div>
-            <div class="col-md-10 col-lg-6 col-xl-6"><img class="img-responsive" src="images/careers-1-570x388.jpg" alt="" width="570" height="388"/>
+            <div class="col-md-10 col-lg-6 col-xl-6">
+              <!-- FIX 4: Tambah loading lazy -->
+              <img class="img-responsive" src="images/careers-1-570x388.jpg" alt="" width="570" height="388" loading="lazy"/>
             </div>
           </div>
         </div>
@@ -110,7 +116,8 @@
       <!-- Advantages and Achievements-->
       <section class="section novi-background section-md text-center bg-gray-100">
         <div class="container">
-          <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Why people Choose Us</span></h3>
+          <!-- FIX 2: H3 -> H2 -->
+          <h2 class="text-uppercase wow-outer"><span class="wow slideInUp">Why people Choose Us</span></h2>
           <p class="wow-outer"><span class="text-width-1 wow slideInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
           <div class="row row-50">
             <div class="col-6 col-md-3 wow-outer">
@@ -120,7 +127,8 @@
                 <div class="counter-minimal-main">
                   <div class="counter">12</div>
                 </div>
-                <h5 class="counter-minimal-title">National Partners</h5>
+                <!-- FIX 2: H5 -> H3 -->
+                <h3 class="counter-minimal-title">National Partners</h3>
               </article>
             </div>
             <div class="col-6 col-md-3 wow-outer">
@@ -130,7 +138,8 @@
                 <div class="counter-minimal-main">
                   <div class="counter">238</div>
                 </div>
-                <h5 class="counter-minimal-title">Properties</h5>
+                <!-- FIX 2: H5 -> H3 -->
+                <h3 class="counter-minimal-title">Properties</h3>
               </article>
             </div>
             <div class="col-6 col-md-3 wow-outer">
@@ -140,7 +149,8 @@
                 <div class="counter-minimal-main">
                   <div class="counter">19</div>
                 </div>
-                <h5 class="counter-minimal-title">Years of Experience</h5>
+                <!-- FIX 2: H5 -> H3 -->
+                <h3 class="counter-minimal-title">Years of Experience</h3>
               </article>
             </div>
             <div class="col-6 col-md-3 wow-outer">
@@ -150,7 +160,8 @@
                 <div class="counter-minimal-main">
                   <div class="counter">54</div>
                 </div>
-                <h5 class="counter-minimal-title">Qualified Brokers</h5>
+                <!-- FIX 2: H5 -> H3 -->
+                <h3 class="counter-minimal-title">Qualified Brokers</h3>
               </article>
             </div>
           </div>
@@ -158,15 +169,18 @@
       </section>
       <section class="section novi-background section-lg text-center">
         <div class="container">
-          <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h3>
+          <!-- FIX 2: H3 -> H2 -->
+          <h2 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h2>
           <div class="row row-50 row-xxl-70 justify-content-center justify-content-lg-start">
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: Tambah loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Nathalie Porter</a></h5>
+                  <!-- FIX 2: H5 -> H3 -->
+                  <h3 class="profile-creative-title"><a href="#">Nathalie Porter</a></h3>
                   <p class="profile-creative-position">Founder, Broker</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -178,10 +192,12 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: Tambah loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">John Thompson</a></h5>
+                  <!-- FIX 2: H5 -> H3 -->
+                  <h3 class="profile-creative-title"><a href="#">John Thompson</a></h3>
                   <p class="profile-creative-position">Sales Associate</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -193,10 +209,12 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: Tambah loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Brian Payne</a></h5>
+                  <!-- FIX 2: H5 -> H3 -->
+                  <h3 class="profile-creative-title"><a href="#">Brian Payne</a></h3>
                   <p class="profile-creative-position">Realtor</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -208,10 +226,12 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: Tambah loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Marie Fernandez</a></h5>
+                  <!-- FIX 2: H5 -> H3 -->
+                  <h3 class="profile-creative-title"><a href="#">Marie Fernandez</a></h3>
                   <p class="profile-creative-position">Broker</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -254,21 +274,22 @@
                     <div class="col-sm-5 col-md-7 col-lg-4">
                       <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
                       <div class="row row-x-10" data-lightgallery="group">
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="">
+                        <!-- FIX 4: Tambah loading lazy -->
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"> </div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
-                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="">
+                        <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="" loading="lazy">
                             <div class="thumbnail-minimal-caption"></div></a></div>
                       </div>
                     </div>
