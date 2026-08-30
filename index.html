@@ -3,23 +3,40 @@
   <head>
     <title>Muhammad Nur Tauhid Anfasi - Personal Profile</title>
     <meta name="format-detection" content="telephone=no">
-    <!-- FIX 1: Viewport Zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- FIX 3: URL Font Usang -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
-    <!-- FIX 5: Removed IE8 Panel Style -->
+    <!-- INLINE CSS FOR COLORFUL OVERRIDES -->
+    <style>
+      /* Gradient Backgrounds for Hero Slider */
+      .bg-gradient-1 { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+      .bg-gradient-2 { background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%); }
+      .bg-gradient-3 { background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); }
+      
+      /* Colorful Navbar Links */
+      .rd-navbar-corporate .rd-nav-item.active .rd-nav-link { color: #007bff; border-bottom: 2px solid #007bff; }
+      .rd-navbar-corporate .rd-nav-link:hover { color: #007bff; }
+      
+      /* Vibrant Icons */
+      .icon-colorful { color: #007bff; }
+      
+      /* Skill Cards Background Hover Effect */
+      .post-modern { border-bottom: 3px solid transparent; transition: all 0.3s ease; }
+      .post-modern:hover { border-bottom: 3px solid #007bff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: translateY(-5px); }
+      
+      /* Ensure text is readable on gradients */
+      .swiper-slide-caption * { color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+      .slider-text { font-size: 1.1rem; line-height: 1.6; }
+    </style>
   </head>
   <body>
-    <!-- FIX 5: Removed IE8 Panel Div -->
     <div class="preloader">
       <div class="preloader-logo">
-        <!-- LOGO TEXT - PRELOADER -->
         <span class="font-weight-bold text-uppercase" style="font-size: 28px; letter-spacing: 2px; color: #212121;">Tauhid</span><span class="text-primary" style="font-size: 32px;">.</span>
       </div>
       <div class="preloader-body">
@@ -29,18 +46,13 @@
       </div>
     </div>
     <div class="page">
-      <!-- Page Header (Banner removed for clean look) -->
       <header class="section novi-background page-header">
-        <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
             <div class="rd-navbar-aside-outer">
               <div class="rd-navbar-aside">
-                <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand - LOGO TEXT -->
                   <a class="rd-navbar-brand" href="index.html">
                     <span class="font-weight-bold text-uppercase" style="font-size: 24px; letter-spacing: 2px; color: #212121;">Tauhid</span><span class="text-primary" style="font-size: 28px;">.</span>
                   </a>
@@ -49,7 +61,7 @@
                   <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
                   <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
                     <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-email"></span></div>
+                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-email icon-colorful"></span></div>
                       <div class="unit-body">
                         <ul class="list-0">
                           <li><a class="link-default" href="mailto:#">contact@example.com</a></li>
@@ -57,9 +69,9 @@
                       </div>
                     </article>
                     <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker"></span></div>
+                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker icon-colorful"></span></div>
                       <div class="unit-body"><a class="link-default" href="#">Indonesia</a></div>
-                    </article><a class="button button-gray-bordered button-winona" href="contacts.html">Hire Me</a>
+                    </article><a class="button button-primary button-winona" href="contacts.html">Hire Me</a>
                   </div>
                 </div>
               </div>
@@ -67,16 +79,11 @@
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                  <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Me</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Portfolio</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
-                    </li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Me</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Portfolio</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a></li>
                   </ul>
                 </div>
               </div>
@@ -84,95 +91,93 @@
           </nav>
         </div>
       </header>
-      <!-- Swiper-->
-      <!-- FIX 2: Added inline background color fallback #363636 so text remains readable even if image is missing -->
+      
+      <!-- Swiper with Gradients -->
       <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="horizontal">
         <div class="swiper-wrapper text-left">
-          <!-- Slide 1 -->
-          <div class="swiper-slide context-dark" data-slide-bg="images/slider-1-1920x968.jpg" style="background-color: #363636; background-blend-mode: multiply;">
+          <!-- Slide 1: Blue Gradient -->
+          <div class="swiper-slide context-dark bg-gradient-1">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row">
                   <div class="col-md-10 col-lg-8 col-xl-7">
                     <h2 class="slider-title-profile" data-caption-animate="fadeInUp" data-caption-delay="50">Hello, I am</h2>
-                    <!-- FIX 2: H1 for Main Name -->
                     <h1 class="slider-title" data-caption-animate="fadeInUp" data-caption-delay="150" style="font-size: 3rem;">Muhammad Nur Tauhid Anfasi</h1>
-                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">Process Automation Specialist with experience at PT Bukit Makmur Mandiri Utama (BUMA). Skilled in Python, SAP S/4 HANA automation, and VBA macros to streamline operations.</p><a class="button button-primary button-winona" href="about-us.html" data-caption-animate="fadeInUp" data-caption-delay="300">More About Me</a>
+                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">Process Automation Specialist with experience at PT Bukit Makmur Mandiri Utama (BUMA). Skilled in Python, SAP S/4 HANA automation, and VBA macros to streamline operations.</p>
+                    <a class="button button-primary button-winona" href="about-us.html" data-caption-animate="fadeInUp" data-caption-delay="300">More About Me</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide context-dark" data-slide-bg="images/slider-2-1920x968.jpg" style="background-color: #2b3a42; background-blend-mode: multiply;">
+          <!-- Slide 2: Purple/Blue Gradient -->
+          <div class="swiper-slide context-dark bg-gradient-2">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row">
                   <div class="col-md-10 col-lg-8 col-xl-7">
                     <h2 class="slider-title-profile" data-caption-animate="fadeInUp" data-caption-delay="50">Automating the Future</h2>
                     <h1 class="slider-title" data-caption-animate="fadeInUp" data-caption-delay="150" style="font-size: 3rem;">Data Solutions & Scripting</h1>
-                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">From developing automated stock screeners and WhatsApp bot agents to complex data processing, I build tools that work efficiently.</p><a class="button button-primary button-winona" href="typography.html" data-caption-animate="fadeInUp" data-caption-delay="300">View Portfolio</a>
+                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">From developing automated stock screeners and WhatsApp bot agents to complex data processing, I build tools that work efficiently.</p>
+                    <a class="button button-white-outline button-winona" href="typography.html" data-caption-animate="fadeInUp" data-caption-delay="300">View Portfolio</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide context-dark" data-slide-bg="images/slider-3-1920x968.jpg" style="background-color: #42302b; background-blend-mode: multiply;">
+          <!-- Slide 3: Teal/Dark Gradient -->
+          <div class="swiper-slide context-dark bg-gradient-3">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row">
                   <div class="col-md-10 col-lg-8 col-xl-7">
                     <h2 class="slider-title-profile" data-caption-animate="fadeInUp" data-caption-delay="50">Dedicated & Analytical</h2>
                     <h1 class="slider-title" data-caption-animate="fadeInUp" data-caption-delay="150" style="font-size: 3rem;">Professional Growth</h1>
-                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">Constantly learning and exploring new technologies to drive efficiency and operational excellence in every project I handle.</p><a class="button button-primary button-winona" href="contacts.html" data-caption-animate="fadeInUp" data-caption-delay="300">Contact Me</a>
+                    <p class="slider-text" data-caption-animate="fadeInUp" data-caption-delay="250">Constantly learning and exploring new technologies to drive efficiency and operational excellence in every project I handle.</p>
+                    <a class="button button-primary button-winona" href="contacts.html" data-caption-animate="fadeInUp" data-caption-delay="300">Contact Me</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Swiper Pagination-->
         <div class="swiper-pagination"></div>
       </section>
+
       <!-- Services-->
-      <section class="section novi-background section-md text-center">
+      <section class="section novi-background section-md text-center bg-gray-100">
         <div class="container">
-          <!-- FIX 2: H3 -> H2 -->
-          <h2 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInUp">My Core Skills</span></h2>
+          <h2 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInUp" style="color: #212121;">My Core Skills</span></h2>
           <div class="row row-lg-50 row-35 offset-top-2">
+            <!-- Card 1 -->
             <div class="col-md-6 col-lg-4 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-370x271.jpg" alt="" width="370" height="271" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Python & Scripting</a></h4>
-                <div class="post-modern-time">
-                  <time datetime="2019-04-05">Data Automation</time>
-                </div>
+              <article class="post-modern wow slideInLeft bg-white p-4" style="border-radius: 8px;">
+                <div class="icon novi-icon icon-lg mdi mdi-language-python text-primary mb-3"></div>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#" style="color: #333;">Python & Scripting</a></h4>
+                <p class="mt-2 text-muted">Developing automated data screeners and integrated bot agents.</p>
               </article>
             </div>
+            <!-- Card 2 -->
             <div class="col-md-6 col-lg-4 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInUp"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-370x271.jpg" alt="" width="370" height="271" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">SAP S/4 HANA</a></h4>
-                <div class="post-modern-time">
-                  <time datetime="2019-04-05">System Integration</time>
-                </div>
+              <article class="post-modern wow slideInUp bg-white p-4" style="border-radius: 8px;">
+                <div class="icon novi-icon icon-lg mdi mdi-database text-primary mb-3"></div>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#" style="color: #333;">SAP S/4 HANA</a></h4>
+                <p class="mt-2 text-muted">Automating batch processing and dynamic system integrations.</p>
               </article>
             </div>
+            <!-- Card 3 -->
             <div class="col-md-6 col-lg-4 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInRight"><a class="post-modern-media" href="#"><img src="images/grid-blog-3-370x271.jpg" alt="" width="370" height="271" loading="lazy"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">Excel VBA Macros</a></h4>
-                <div class="post-modern-time">
-                  <time datetime="2019-04-05">Process Optimization</time>
-                </div>
+              <article class="post-modern wow slideInRight bg-white p-4" style="border-radius: 8px;">
+                <div class="icon novi-icon icon-lg mdi mdi-microsoft-excel text-primary mb-3"></div>
+                <h4 class="post-modern-title"><a class="post-modern-title" href="#" style="color: #333;">Excel VBA Macros</a></h4>
+                <p class="mt-2 text-muted">Streamlining operations with advanced macro programming.</p>
               </article>
             </div>
           </div>
         </div>
       </section>
       
-      <!-- Page Footer (Banner removed) -->
+      <!-- Footer -->
       <footer class="section novi-background footer-advanced bg-gray-700">
         <div class="footer-advanced-main">
           <div class="container">
@@ -183,41 +188,26 @@
               </div>
               <div class="col-sm-7 col-md-5 col-lg-4">
                 <h5 class="font-weight-bold text-uppercase text-white">Recent Projects</h5>
-                <!-- Post Inline-->
                 <article class="post-inline">
                   <p class="post-inline-title"><a href="#">Automated Stock Screener & Notification</a></p>
-                  <ul class="post-inline-meta">
-                    <li>Python & WhatsApp Bot</li>
-                  </ul>
+                  <ul class="post-inline-meta"><li>Python & WhatsApp Bot</li></ul>
                 </article>
-                <!-- Post Inline-->
                 <article class="post-inline">
                   <p class="post-inline-title"><a href="#">SAP S/4 HANA Batch Processing</a></p>
-                  <ul class="post-inline-meta"> 
-                    <li>VBScript & Integration</li>
-                  </ul>
+                  <ul class="post-inline-meta"><li>VBScript & Integration</li></ul>
                 </article>
               </div>
               <div class="col-sm-5 col-md-7 col-lg-4">
                 <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
                 <div class="row row-x-10" data-lightgallery="group">
-                  <!-- FIX 4: Tambah loading lazy -->
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"> </div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="" loading="lazy">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"> </div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="" loading="lazy"><div class="thumbnail-minimal-caption"></div></a></div>
                 </div>
               </div>
             </div>
@@ -244,26 +234,20 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <hr>
-        </div>
+        <div class="container"><hr></div>
         <div class="footer-advanced-aside">
           <div class="container">
             <div class="footer-advanced-layout">
-              <!-- LOGO TEXT - FOOTER -->
               <a class="brand" href="index.html">
                 <span class="font-weight-bold text-uppercase text-white" style="font-size: 22px; letter-spacing: 2px;">Tauhid</span><span class="text-primary" style="font-size: 26px;">.</span>
               </a>
-              <!-- Rights-->
               <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Muhammad Nur Tauhid Anfasi.</p>
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
