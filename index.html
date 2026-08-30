@@ -3,18 +3,20 @@
   <head>
     <title>Home</title>
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <!-- FIX 1: Viewport Zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
+    <!-- FIX 3: URL Font Usang -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <!-- FIX 5: Removed IE8 Panel Style -->
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- FIX 5: Removed IE8 Panel Div -->
     <div class="preloader">
       <div class="preloader-logo"><img src="images/logo-default-151x44.png" alt="" width="151" height="44" srcset="images/logo-default-151x44.png 2x"/>
       </div>
@@ -123,11 +125,13 @@
       </section>
       <section class="section novi-background section-md text-center">
         <div class="container">
-          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Popular properties</span></h3>
+          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
+          <h2 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Popular properties</span></h2>
           <div class="row row-lg-50 row-35 offset-top-2">
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-571x353.jpg" alt="" width="571" height="353"/></a>
+              <!-- FIX 4: loading lazy -->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">5619 Walnut Hill Ln, Dallas, TX 75229</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">$1500/mon</a></li>
@@ -139,7 +143,8 @@
             </div>
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-571x353.jpg" alt="" width="571" height="353"/></a>
+              <!-- FIX 4: loading lazy -->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">1808 Bolingbroke Pl, Fort Worth, TX 76140</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">$1300/mon</a></li>
@@ -151,7 +156,8 @@
             </div>
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-3-571x353.jpg" alt="" width="571" height="353"/></a>
+              <!-- FIX 4: loading lazy -->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-3-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">924 Bel Air Rd, Los Angeles, CA 90077</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">1800/mon</a></li>
@@ -163,7 +169,8 @@
             </div>
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-4-571x353.jpg" alt="" width="571" height="353"/></a>
+              <!-- FIX 4: loading lazy -->
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-4-571x353.jpg" alt="" width="571" height="353" loading="lazy"/></a>
                 <h4 class="post-modern-title"><a class="post-modern-title" href="#">13510 W Cheery Lynn Rd, Avondale, AZ 85392</a></h4>
                 <ul class="post-modern-meta">
                   <li><a class="button-winona" href="#">$2700/mon</a></li>
@@ -185,7 +192,8 @@
               <article class="box-minimal">
                 <div class="box-chloe__icon novi-icon linearicons-user wow fadeIn"></div>
                 <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown">Qualified Employees</h4>
+                  <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                  <h3 class="box-minimal-title wow slideInDown">Qualified Employees</h3>
                   <p class="wow fadeInUpSmall">Our team consists of more than 20 qualified and experienced real estate brokers and property managers ready to help you.</p>
                 </div>
               </article>
@@ -195,7 +203,8 @@
               <article class="box-minimal">
                 <div class="box-chloe__icon novi-icon linearicons-bubble-text wow fadeIn" data-wow-delay=".1s"></div>
                 <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Free Consultations</h4>
+                  <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                  <h3 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Free Consultations</h3>
                   <p class="wow fadeInUpSmall" data-wow-delay=".1s">Our acquaintance with a client always begins with a free consultation to find out what kind of property they are looking for.</p>
                 </div>
               </article>
@@ -205,7 +214,8 @@
               <article class="box-minimal">
                 <div class="box-chloe__icon novi-icon linearicons-star wow fadeIn" data-wow-delay=".2s"></div>
                 <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".2s">100% Guaranteed</h4>
+                  <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                  <h3 class="box-minimal-title wow slideInDown" data-wow-delay=".2s">100% Guaranteed</h3>
                   <p class="wow fadeInUpSmall" data-wow-delay=".2s">All the results that you get from our realtors are 100% guaranteed to offer you the best choice of properties throughout the USA.</p>
                 </div>
               </article>
@@ -216,31 +226,40 @@
       <!-- Services-->
       <section class="section novi-background section-lg text-center">
         <div class="container">
-          <h3 class="text-uppercase">Residential property categories</h3>
+          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
+          <h2 class="text-uppercase">Residential property categories</h2>
           <p><span class="text-width-1">At our agency, we work with various types of residential real estate property. You can find out more about our properties by browsing our website.</span></p>
           <div class="row row-35 row-xxl-70 offset-top-2">
             <div class="col-sm-6 col-lg-3">
               <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-1-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Single-Family Homes</a></h4>
+              <!-- FIX 4: loading lazy -->
+              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-1-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
+                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                <h3 class="thumbnail-light-title"><a href="#">Single-Family Homes</a></h3>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
               <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-2-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Townhouses</a></h4>
+              <!-- FIX 4: loading lazy -->
+              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-2-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
+                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                <h3 class="thumbnail-light-title"><a href="#">Townhouses</a></h3>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
               <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-3-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Multi-Family Homes</a></h4>
+              <!-- FIX 4: loading lazy -->
+              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-3-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
+                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                <h3 class="thumbnail-light-title"><a href="#">Multi-Family Homes</a></h3>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
               <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-4-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Condominiums</a></h4>
+              <!-- FIX 4: loading lazy -->
+              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-4-270x300.jpg" alt="" width="270" height="300" loading="lazy"/></a>
+                <!-- FIX 2: Hierarki Heading h4 -> h3 -->
+                <h3 class="thumbnail-light-title"><a href="#">Condominiums</a></h3>
               </article>
             </div>
             <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view all properties</a></div>
@@ -249,15 +268,18 @@
       </section>
       <section class="section novi-background section-lg text-center bg-gray-100">
         <div class="container">
-          <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h3>
+          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
+          <h2 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h2>
           <div class="row row-lg-50 row-35 row-xxl-70 justify-content-center justify-content-lg-start">
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Nathalie Porter</a></h5>
+                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
+                  <h3 class="profile-creative-title"><a href="#">Nathalie Porter</a></h3>
                   <p class="profile-creative-position">Founder, Broker</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -269,10 +291,12 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">John Thompson</a></h5>
+                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
+                  <h3 class="profile-creative-title"><a href="#">John Thompson</a></h3>
                   <p class="profile-creative-position">Sales Associate</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -284,10 +308,12 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Brian Payne</a></h5>
+                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
+                  <h3 class="profile-creative-title"><a href="#">Brian Payne</a></h3>
                   <p class="profile-creative-position">Realtor</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -299,10 +325,12 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273"/>
+                <!-- FIX 4: loading lazy -->
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273" loading="lazy"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Marie Fernandez</a></h5>
+                  <!-- FIX 2: Hierarki Heading h5 -> h3 -->
+                  <h3 class="profile-creative-title"><a href="#">Marie Fernandez</a></h3>
                   <p class="profile-creative-position">Broker</p>
                   <div class="profile-creative-contacts">
                     <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
@@ -319,7 +347,8 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-sm-10 col-lg-7 col-xl-6">
-              <h3 class="wow-outer"><span class="wow slideInDown text-uppercase">Best offers</span></h3>
+              <!-- FIX 2: Hierarki Heading h3 -> h2 -->
+              <h2 class="wow-outer"><span class="wow slideInDown text-uppercase">Best offers</span></h2>
               <p class="heading-subtitle">of September</p>
               <p class="wow-outer offset-top-4"><span class="wow slideInDown" data-wow-delay=".05s">With a variety of accountants available at our company, you can always choose one that fits your corporate requirements.</span></p>
               <div class="wow-outer button-outer"><a class="button button-primary-white button-winona wow slideInDown" href="#" data-wow-delay=".1s">Read more</a></div>
@@ -329,12 +358,14 @@
       </section>
       <section class="section novi-background section-lg text-center">
         <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInDown text-uppercase">Testimonials</span></h3>
+          <!-- FIX 2: Hierarki Heading h3 -> h2 -->
+          <h2 class="wow-outer"><span class="wow slideInDown text-uppercase">Testimonials</span></h2>
           <!-- Owl Carousel-->
           <div class="owl-carousel wow fadeIn" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-loop="true" data-autoplay="true" data-autoplay-speed="731" data-autoplay-timeout="4268" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-6-96x96.jpg" alt="" width="96" height="96"/>
+                <!-- FIX 4: loading lazy -->
+                <div class="quote-classic-avatar"><img src="images/testimonials-person-6-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Albert Webb</cite>
@@ -347,7 +378,8 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
+                <!-- FIX 4: loading lazy -->
+                <div class="quote-classic-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Kelly McMillan</cite>
@@ -360,7 +392,8 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                <!-- FIX 4: loading lazy -->
+                <div class="quote-classic-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Harold Barnett</cite>
@@ -373,7 +406,8 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
+                <!-- FIX 4: loading lazy -->
+                <div class="quote-classic-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Bill Warner</cite>
@@ -386,7 +420,8 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-4-96x96.jpg" alt="" width="96" height="96"/>
+                <!-- FIX 4: loading lazy -->
+                <div class="quote-classic-avatar"><img src="images/testimonials-person-4-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Ann Lee</cite>
@@ -399,7 +434,8 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-5-96x96.jpg" alt="" width="96" height="96"/>
+                <!-- FIX 4: loading lazy -->
+                <div class="quote-classic-avatar"><img src="images/testimonials-person-5-96x96.jpg" alt="" width="96" height="96" loading="lazy"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Peter Clarkson</cite>
@@ -443,21 +479,29 @@
               <div class="col-sm-5 col-md-7 col-lg-4">
                 <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
                 <div class="row row-x-10" data-lightgallery="group">
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"> </div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt=""/>
+                  <!-- FIX 4: loading lazy -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt="" loading="lazy"/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
                 </div>
               </div>
