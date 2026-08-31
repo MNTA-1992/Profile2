@@ -17835,10 +17835,10 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .footer-aside-py { padding-top: 15px; padding-bottom: 15px; }
 
 /* =======================================================
-   NAVBAR STICKY GRADIENT EFFECT (FIXED)
+   NAVBAR STICKY GRADIENT EFFECT (ANTI-GHOSTING FIX)
    ======================================================= */
 
-/* 1. Menerapkan gradasi pada navbar induk dengan prioritas tinggi */
+/* 1. Kunci background gradasi di Navbar Induk dan Clone-nya */
 .rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck,
 .rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone {
     background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%) !important;
@@ -17846,27 +17846,43 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     border-bottom: none !important;
 }
 
-/* 2. KUNCI PERBAIKAN: Memaksa semua elemen anak menjadi transparan agar hitam bawaan hilang */
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main-outer,
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main,
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-nav-wrap,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main-outer,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-nav-wrap {
+/* 2. KUNCI PERBAIKAN: Berikan juga gradasi pada kontainer utama menu. 
+      Ini mencegah background menjadi transparan mendadak saat animasi scroll-up. */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main-outer,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main-outer {
+    background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%) !important;
+}
+
+/* 3. Pastikan elemen bagian paling dalam tetap transparan agar tidak ada warna hitam menumpuk */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-nav-wrap,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-nav-wrap {
     background: transparent !important;
     background-color: transparent !important;
 }
 
-/* 3. Menyesuaikan warna teks Menu agar kontras dengan background gelap */
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-link,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-link {
+/* 4. Sesuaikan warna teks Menu agar kontras dan mudah dibaca */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-link,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-link {
     color: #dcdde1 !important;
 }
 
-/* 4. Efek Hover dan penanda menu Aktif saat kondisi sticky */
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-link:hover,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-link:hover,
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-item.active .rd-nav-link {
+/* 5. Efek Hover & Aktif pada menu saat Sticky/Scroll */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-link:hover,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-link:hover,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-item.active .rd-nav-link {
     color: #64b5f6 !important; 
+    border-bottom-color: #64b5f6 !important;
+}
+
+/* 6. Mencerahkan Teks Logo (Tauhid.) dan Ikon Kontak saat Scroll */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .navbar-brand-text,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .navbar-brand-text {
+    color: #ffffff !important;
+}
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .icon-colorful,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .icon-colorful {
+    color: #64b5f6 !important;
 }
