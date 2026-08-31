@@ -33,15 +33,24 @@
       .swiper-slide-caption * { color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
       .slider-text { font-size: 1.1rem; line-height: 1.6; }
       
-      /* Colorful Footer Background */
-      .bg-footer-gradient { 
-        background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%); 
-        color: #dcdde1; 
+      /* Cloudy Grey Header with Glassmorphism */
+      .header-cloudy {
+        background: linear-gradient(135deg, rgba(240, 243, 245, 0.9) 0%, rgba(209, 216, 224, 0.9) 100%) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
       }
-      .bg-footer-gradient h5 { color: #ffffff !important; }
-      .bg-footer-gradient a { color: #a4b0be; transition: all 0.3s ease; }
-      .bg-footer-gradient a:hover { color: #ffffff; text-decoration: none; }
-      .bg-footer-gradient hr { border-top-color: rgba(255, 255, 255, 0.15); }
+      
+      /* Cloudy Grey Footer Background */
+      .bg-footer-gradient { 
+        background: linear-gradient(135deg, #606c88 0%, #3f4c6b 100%); 
+        color: #e2e8f0; 
+      }
+      .bg-footer-gradient h5 { color: #ffffff !important; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+      .bg-footer-gradient a { color: #cbd5e1; transition: all 0.3s ease; }
+      .bg-footer-gradient a:hover { color: #ffffff; text-decoration: none; text-shadow: 0 0 8px rgba(255,255,255,0.5); }
+      .bg-footer-gradient hr { border-top-color: rgba(255, 255, 255, 0.2); }
     </style>
   </head>
   <body>
@@ -56,7 +65,7 @@
       </div>
     </div>
     <div class="page">
-      <header class="section novi-background page-header">
+      <header class="section novi-background page-header header-cloudy">
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
             <div class="rd-navbar-aside-outer">
@@ -83,7 +92,7 @@
                       <div class="unit-body"><a class="link-default" href="#" target="_blank">LinkedIn</a></div>
                     </article>
                     <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-github icon-colorful"></span></div>
+                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-github-circle icon-colorful"></span></div>
                       <div class="unit-body"><a class="link-default" href="#" target="_blank">GitHub</a></div>
                     </article>
                     <a class="button button-primary button-winona" href="contacts.html">Hire Me</a>
