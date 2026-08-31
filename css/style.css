@@ -17911,65 +17911,57 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 }
 
 /* =======================================================
-   HEADER MODERN & INTERACTIVE ENHANCEMENTS
+   HEADER MODERN & INTERACTIVE ENHANCEMENTS 
    ======================================================= */
 
-/* 1. Latar belakang Top Bar (Biru Muda / Ice Blue yang lebih jelas) */
+/* 1. Latar belakang Top Bar (Biru Muda / Ice Blue) tetap dipertahankan */
 .rd-navbar-corporate .rd-navbar-aside-outer {
-    background-color: #e8f1f8 !important; /* Warna biru muda yang lebih kentara */
-    border-bottom: 1px solid #d1e3f3 !important; /* Garis batas biru pudar */
+    background-color: #e8f1f8 !important; 
+    border-bottom: 1px solid #d1e3f3 !important; 
 }
-
-/* Memastikan container di dalamnya transparan agar warna outer terlihat */
 .rd-navbar-corporate .rd-navbar-aside {
     background-color: transparent !important; 
 }
 
-/* 2. Styling Ikon Kontak: Lingkaran Putih agar kontras dengan background biru muda */
+/* 2. Styling Ikon Kontak: KEMBALI SEPERTI SEMULA (Tanpa Background Lingkaran) */
 .rd-navbar-corporate .unit-left .icon-modern {
-    background: #ffffff !important; /* Background lingkaran putih bersih */
-    color: #007bff !important; /* Ikon tetap biru */
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1); /* Bayangan lembut agar ikon terlihat 3D */
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: transparent !important; /* Menghilangkan lingkaran putih/solid */
+    color: #007bff !important; 
+    box-shadow: none !important;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    transform: none !important;
 }
 
-/* 3. Efek Hover Interaktif saat kursor diarahkan ke Info Kontak */
-.rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .icon-modern {
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-    color: #ffffff !important;
-    transform: scale(1.15) rotate(5deg); /* Ikon membesar & sedikit miring */
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
-
-.rd-navbar-corporate .rd-navbar-collapse-content .unit {
-    cursor: pointer; /* Mengubah kursor jadi tangan agar terkesan bisa diklik/interaktif */
-}
-
+/* Efek saat info kontak disorot (hover) - Hanya warnanya yang sedikit menggelap */
+.rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .icon-modern,
 .rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .link-default {
-    color: #007bff !important;
+    background: transparent !important;
+    color: #0056b3 !important; 
+    box-shadow: none !important;
+    transform: none !important;
 }
 
-/* 4. Upgrade Tombol "Hire Me" menjadi Gradient Modern & Pill-Shape */
+/* 3. MENEBALKAN TEKS MENU UTAMA (HOME, ABOUT ME, PORTFOLIO, CONTACTS) */
+.rd-navbar-corporate .rd-nav-link {
+    font-weight: 700 !important; /* Membuat font menjadi BOLD */
+    letter-spacing: 0.5px; /* Menambah sedikit jarak agar teks tebal tidak terlalu berdempetan */
+}
+
+/* 4. Upgrade Tombol "Hire Me" (Tetap dipertahankan) */
 .rd-navbar-corporate .rd-navbar-collapse-content .button-primary {
     background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
     border: none !important;
-    border-radius: 30px; /* Ujung melengkung modern */
+    border-radius: 30px; 
     padding: 10px 30px;
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
     transition: all 0.3s ease;
     letter-spacing: 1px;
     font-weight: 600;
 }
-
-/* Efek Hover Tombol Hire Me */
 .rd-navbar-corporate .rd-navbar-collapse-content .button-primary:hover {
-    transform: translateY(-3px); /* Tombol sedikit terangkat */
+    transform: translateY(-3px); 
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
     background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
 }
