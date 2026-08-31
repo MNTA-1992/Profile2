@@ -17835,30 +17835,32 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .footer-aside-py { padding-top: 15px; padding-bottom: 15px; }
 
 /* =======================================================
-   NAVBAR STICKY GRADIENT EFFECT (SCROLL DOWN)
+   NAVBAR STICKY GRADIENT EFFECT (FIXED)
    ======================================================= */
-/* 1. Menerapkan gradasi dan bayangan (shadow) pada navbar utama saat di-scroll */
-.navbar-gradient-scroll.rd-navbar--is-stuck,
-.navbar-gradient-scroll.rd-navbar--is-clone {
+
+/* 1. Menerapkan gradasi pada navbar induk dengan prioritas tinggi */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone {
     background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%) !important;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.25) !important;
-    transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
     border-bottom: none !important;
 }
 
-/* 2. Membuat background lapisan dalam menjadi transparan agar gradasi luar terlihat */
+/* 2. KUNCI PERBAIKAN: Memaksa semua elemen anak menjadi transparan agar hitam bawaan hilang */
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main-outer,
 .navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main,
-.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-panel,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-nav-wrap,
+.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main-outer,
 .navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main,
-.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-panel {
+.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-nav-wrap {
     background: transparent !important;
+    background-color: transparent !important;
 }
 
 /* 3. Menyesuaikan warna teks Menu agar kontras dengan background gelap */
 .navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-link,
 .navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-link {
     color: #dcdde1 !important;
-    transition: color 0.3s ease;
 }
 
 /* 4. Efek Hover dan penanda menu Aktif saat kondisi sticky */
@@ -17867,17 +17869,4 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link,
 .navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-item.active .rd-nav-link {
     color: #64b5f6 !important; 
-    border-bottom-color: #64b5f6 !important;
-}
-
-/* 5. Mengubah teks Logo (Tauhid) menjadi putih saat di-scroll */
-.navbar-gradient-scroll.rd-navbar--is-stuck .navbar-brand-text,
-.navbar-gradient-scroll.rd-navbar--is-clone .navbar-brand-text {
-    color: #ffffff !important;
-}
-
-/* 6. Mencerahkan ikon kontak saat background menjadi gelap */
-.navbar-gradient-scroll.rd-navbar--is-stuck .icon-colorful,
-.navbar-gradient-scroll.rd-navbar--is-clone .icon-colorful {
-    color: #64b5f6 !important;
 }
