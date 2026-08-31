@@ -17981,61 +17981,55 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 }
 
 /* =======================================================
-   MENU BOX ROLLING HOVER EFFECT (FULL BLOCK)
+   MENU BOX ROLLING HOVER EFFECT (FIXED LAYOUT)
    ======================================================= */
 
-/* 1. Menjadikan kontainer menu full-height dan menyatu (tanpa jarak) */
+/* 1. Kembalikan display menu ke horizontal (inline-block) */
 .rd-navbar-corporate .rd-nav-item {
     position: relative;
     overflow: hidden;
-    border-radius: 0 !important; /* Dibuat kotak penuh agar menyatu dengan navbar */
-    margin: 0 !important; /* Menghilangkan jarak antar menu */
-    height: 100%; /* Memastikan item menu memenuhi seluruh tinggi navbar */
-    display: flex;
-    align-items: center;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    display: inline-block !important; /* INI KUNCINYA: Membuat menu berjejer rapi ke samping */
+    vertical-align: middle;
 }
 
-/* 2. Menghilangkan garis bawah (border-bottom) bawaan template lama */
+/* 2. Menghilangkan garis bawah bawaan */
 .rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
 .rd-navbar-corporate .rd-nav-link:hover,
 .navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
     border-bottom: none !important;
 }
 
-/* 3. KUNCI PERBAIKAN: Kotak gaib sekarang menempel di kontainer utama (rd-nav-item) */
+/* 3. Kotak gaib bersembunyi di bawah */
 .rd-navbar-corporate .rd-nav-item::before {
     content: '';
     position: absolute;
-    top: 100%; /* Sembunyi di bagian bawah */
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #007bff 0%, #004b9a 100%) !important;
     z-index: 1;
-    /* Efek transisi meluncur naik dengan pantulan elastis */
     transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* 4. Trigger meluncur naik saat menu di-hover atau sedang aktif */
+/* 4. Trigger meluncur naik saat hover/aktif */
 .rd-navbar-corporate .rd-nav-item:hover::before,
 .rd-navbar-corporate .rd-nav-item.active::before {
-    top: 0; /* Box meluncur naik menutupi full area */
+    top: 0;
 }
 
-/* 5. Melebarkan area teks agar box-nya ikut lebar, dan memastikan teks di atas box */
+/* 5. Mengatur area teks (link) menjadi balok dengan padding agar kotaknya tebal/tinggi */
 .rd-navbar-corporate .rd-nav-link {
     position: relative;
     z-index: 2;
     transition: color 0.3s ease;
-    padding: 0 25px !important; /* Menambah kelebaran (kiri-kanan) area menu */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 25px 25px !important; /* Mengatur tinggi (25px) dan lebar (25px) area hover */
+    display: block !important; 
 }
 
-/* 6. Perubahan warna teks menjadi putih saat tersorot box */
+/* 6. Warna teks putih saat tersorot */
 .rd-navbar-corporate .rd-nav-item:hover .rd-nav-link,
 .rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
 .navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item:hover .rd-nav-link,
