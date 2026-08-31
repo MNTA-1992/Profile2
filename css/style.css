@@ -17806,3 +17806,109 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .bg-footer-gradient a:hover { color: #ffffff; text-decoration: none; }
 .bg-footer-gradient hr { border-top-color: rgba(255, 255, 255, 0.15); }
 }
+
+/* =======================================================
+   1. PENYESUAIAN UKURAN MENU & GARIS BATAS SLIDER
+   ======================================================= */
+/* Memangkas tinggi (padding) area menu agar 10% lebih ramping dan menambahkan garis batas */
+.rd-navbar-corporate .rd-navbar-main-outer {
+    padding: 3px 0 !important; /* Mengurangi ruang kosong atas/bawah */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important; /* Garis batas tegas (putih transparan) */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important; /* Bayangan halus ke arah slider */
+    background: #192a56; /* Memberikan warna solid awal agar teks slider tidak tembus ke atas */
+}
+
+/* =======================================================
+   2. MENU BOX ROLLING HOVER EFFECT (LEBIH RAMPING)
+   ======================================================= */
+.rd-navbar-corporate .rd-nav-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px !important;
+    margin: 0 5px !important;
+    display: inline-block !important; 
+    vertical-align: middle;
+}
+
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
+.rd-navbar-corporate .rd-nav-link:hover,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
+    border-bottom: none !important;
+}
+
+/* Kotak gaib bersembunyi di bawah */
+.rd-navbar-corporate .rd-nav-item::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #007bff 0%, #004b9a 100%) !important;
+    z-index: 1;
+    transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Trigger meluncur naik */
+.rd-navbar-corporate .rd-nav-item:hover::before,
+.rd-navbar-corporate .rd-nav-item.active::before {
+    top: 0;
+}
+
+/* Ukuran Box Hover yang dirampingkan menyesuaikan tinggi menu baru */
+.rd-navbar-corporate .rd-nav-link {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+    padding: 8px 18px !important; /* (Diperkecil) Tinggi dan lebar box hover dirampingkan */
+    display: block !important; 
+}
+
+/* Warna teks putih saat disorot */
+.rd-navbar-corporate .rd-nav-item:hover .rd-nav-link,
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item:hover .rd-nav-link,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
+    color: #ffffff !important;
+}
+
+/* =======================================================
+   3. NAVBAR STICKY GRADIENT (ANTI-GHOSTING & SCROLL FIX)
+   ======================================================= */
+/* Menerapkan gradasi solid dan bayangan kuat saat menu menggulung (scroll down) */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone {
+    background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important; /* Bayangan lebih kuat saat melayang */
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/* Mengunci latar belakang kontainer menu agar teks dari slider benar-benar tidak tembus (no bleed) */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main-outer,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main-outer {
+    background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%) !important;
+}
+
+/* Transparansi lapisan dalam agar warna gradasi dari induknya (main-outer) terlihat */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-main,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-navbar-nav-wrap,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-main,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-navbar-nav-wrap {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Penyesuaian warna teks saat menu dalam mode sticky */
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-link,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .rd-nav-link {
+    color: #dcdde1 !important;
+}
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .navbar-brand-text,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .navbar-brand-text {
+    color: #ffffff !important;
+}
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-stuck .icon-colorful,
+.rd-navbar.navbar-gradient-scroll.rd-navbar--is-clone .icon-colorful {
+    color: #64b5f6 !important;
+}
+
