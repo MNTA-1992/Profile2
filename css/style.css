@@ -17912,3 +17912,74 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     color: #64b5f6 !important;
 }
 
+/* =======================================================
+   HEADER MODERN & INTERACTIVE ENHANCEMENTS (HOVER EFFECT)
+   ======================================================= */
+
+/* 1. Latar belakang Top Bar (Biru Muda / Ice Blue) */
+.rd-navbar-corporate .rd-navbar-aside-outer {
+    background-color: #e8f1f8 !important; 
+    border-bottom: 1px solid #d1e3f3 !important; 
+}
+.rd-navbar-corporate .rd-navbar-aside {
+    background-color: transparent !important; 
+}
+
+/* 2. Base Styling Ikon Kontak & Teks (Kondisi Diam) */
+.rd-navbar-corporate .unit-left .icon-modern {
+    background: transparent !important; 
+    color: #007bff !important; 
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Mempersiapkan bentuk bulat untuk efek hover */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; /* Efek transisi memantul halus */
+}
+.rd-navbar-corporate .rd-navbar-collapse-content .link-default {
+    transition: all 0.3s ease !important;
+}
+
+/* 3. EFEK INTERAKTIF (HOVER) SAAT KURSOR MENYENTUH INFO KONTAK */
+.rd-navbar-corporate .rd-navbar-collapse-content .unit {
+    cursor: pointer;
+}
+
+/* -> Ikon membesar (zoom in), background jadi putih, muncul bayangan */
+.rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .icon-modern {
+    background: #ffffff !important; 
+    transform: scale(1.15) !important; /* Zoom in 15% */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15) !important; 
+}
+
+/* -> Teks berubah menjadi biru dan tebal (bold) */
+.rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .link-default {
+    color: #007bff !important;
+    font-weight: 700 !important; 
+}
+
+/* 4. MENEBALKAN TEKS MENU UTAMA (HOME, ABOUT ME, PORTFOLIO, CONTACTS) */
+.rd-navbar-corporate .rd-nav-link {
+    font-weight: 700 !important; 
+    letter-spacing: 0.5px; 
+}
+
+/* 5. Upgrade Tombol "Hire Me" */
+.rd-navbar-corporate .rd-navbar-collapse-content .button-primary {
+    background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
+    border: none !important;
+    border-radius: 30px; 
+    padding: 10px 30px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.rd-navbar-corporate .rd-navbar-collapse-content .button-primary:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+}
+
+
