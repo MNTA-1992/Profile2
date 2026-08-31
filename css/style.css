@@ -17981,16 +17981,16 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 }
 
 /* =======================================================
-   MENU BOX ROLLING HOVER EFFECT (FIXED LAYOUT)
+   MENU BOX ROLLING HOVER EFFECT (SLIM & PROPORTIONAL)
    ======================================================= */
 
-/* 1. Kembalikan display menu ke horizontal (inline-block) */
+/* 1. Kembalikan display menu ke horizontal dengan jarak dan lengkungan halus */
 .rd-navbar-corporate .rd-nav-item {
     position: relative;
     overflow: hidden;
-    border-radius: 0 !important;
-    margin: 0 !important;
-    display: inline-block !important; /* INI KUNCINYA: Membuat menu berjejer rapi ke samping */
+    border-radius: 4px !important; /* Memberikan sedikit lengkungan agar lebih elegan */
+    margin: 0 5px !important; /* Memberikan jarak antar kotak menu agar tidak berdempetan */
+    display: inline-block !important; 
     vertical-align: middle;
 }
 
@@ -18020,12 +18020,13 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     top: 0;
 }
 
-/* 5. Mengatur area teks (link) menjadi balok dengan padding agar kotaknya tebal/tinggi */
+/* 5. MENGATUR UKURAN KOTAK AGAR RAMPING & PROPORSIONAL */
 .rd-navbar-corporate .rd-nav-link {
     position: relative;
     z-index: 2;
     transition: color 0.3s ease;
-    padding: 25px 25px !important; /* Mengatur tinggi (25px) dan lebar (25px) area hover */
+    /* KUNCI: Padding atas-bawah 10px, kiri-kanan 20px */
+    padding: 10px 20px !important; 
     display: block !important; 
 }
 
