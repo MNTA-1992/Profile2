@@ -18011,3 +18011,25 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .footer-aside-py { padding-top: 15px; padding-bottom: 15px; }
 }
 
+/* =======================================================
+   HEADER PROPORTIONAL SPACING & DARKER TEXT FIX
+   ======================================================= */
+
+/* 1. Merampingkan padding atas dan bawah pada area aside header */
+.rd-navbar-corporate .rd-navbar-aside {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+/* 2. Menggelapkan warna teks info kontak di header agar menonjol */
+.rd-navbar-corporate .rd-navbar-aside .link-default,
+.rd-navbar-corporate .rd-navbar-collapse-content .unit-body a {
+    color: #2c3e50 !important; /* Warna abu-abu gelap yang tegas */
+    font-weight: 500;
+}
+
+/* 3. Memberikan efek warna saat kursor diarahkan ke teks kontak */
+.rd-navbar-corporate .rd-navbar-aside .link-default:hover,
+.rd-navbar-corporate .rd-navbar-collapse-content .unit-body a:hover {
+    color: #007bff !important;
+}
