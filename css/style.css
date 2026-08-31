@@ -17914,23 +17914,29 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
    HEADER MODERN & INTERACTIVE ENHANCEMENTS
    ======================================================= */
 
-/* 1. Memberikan latar belakang sangat halus pada Top Bar agar tidak terlalu kontras */
-.rd-navbar-corporate .rd-navbar-aside {
-    background-color: #f8fafc !important; /* Warna putih kebiruan sangat lembut */
-    border-bottom: 1px solid #e2e8f0;
+/* 1. Latar belakang Top Bar (Biru Muda / Ice Blue yang lebih jelas) */
+.rd-navbar-corporate .rd-navbar-aside-outer {
+    background-color: #e8f1f8 !important; /* Warna biru muda yang lebih kentara */
+    border-bottom: 1px solid #d1e3f3 !important; /* Garis batas biru pudar */
 }
 
-/* 2. Styling Ikon Kontak: Membuatnya berada di dalam lingkaran Soft Blue */
+/* Memastikan container di dalamnya transparan agar warna outer terlihat */
+.rd-navbar-corporate .rd-navbar-aside {
+    background-color: transparent !important; 
+}
+
+/* 2. Styling Ikon Kontak: Lingkaran Putih agar kontras dengan background biru muda */
 .rd-navbar-corporate .unit-left .icon-modern {
-    background: #e0f2fe; /* Background biru muda */
-    color: #007bff !important;
+    background: #ffffff !important; /* Background lingkaran putih bersih */
+    color: #007bff !important; /* Ikon tetap biru */
     border-radius: 50%;
     width: 42px;
     height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi memantul halus */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1); /* Bayangan lembut agar ikon terlihat 3D */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* 3. Efek Hover Interaktif saat kursor diarahkan ke Info Kontak */
