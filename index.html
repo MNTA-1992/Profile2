@@ -18,10 +18,6 @@
       .bg-gradient-2 { background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%); }
       .bg-gradient-3 { background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); }
       
-      /* Colorful Navbar Links */
-      .rd-navbar-corporate .rd-nav-item.active .rd-nav-link { color: #007bff; border-bottom: 2px solid #007bff; }
-      .rd-navbar-corporate .rd-nav-link:hover { color: #007bff; }
-      
       /* Vibrant Icons */
       .icon-colorful { color: #007bff; }
       
@@ -33,15 +29,46 @@
       .swiper-slide-caption * { color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
       .slider-text { font-size: 1.1rem; line-height: 1.6; }
       
-      /* Colorful Footer Background */
-      .bg-footer-gradient { 
-        background: linear-gradient(135deg, #0b132b 0%, #192a56 50%, #273c75 100%); 
+      /* Cloudy Grey Header with Glassmorphism */
+      .header-cloudy {
+        background: linear-gradient(135deg, rgba(240, 243, 245, 0.9) 0%, rgba(209, 216, 224, 0.9) 100%) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      }
+
+      /* FIX: Navbar Menu Dark Cloudy Grey */
+      .rd-navbar-main-outer {
+        background-color: #2f3542 !important; /* Dark cloudy grey */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      .rd-navbar-nav .rd-nav-item .rd-nav-link {
+        color: #ffffff !important; /* Force text to be white */
+      }
+      .rd-navbar-nav .rd-nav-item.active .rd-nav-link {
+        color: #007bff !important;
+        border-bottom: 2px solid #007bff;
+      }
+      .rd-navbar-nav .rd-nav-item .rd-nav-link:hover {
+        color: #007bff !important;
+      }
+      
+      /* FIX: Solid Elegant Dark for Main Footer */
+      .bg-footer-solid { 
+        background-color: #1e272e !important; /* Elegant Solid Dark */
         color: #dcdde1; 
       }
-      .bg-footer-gradient h5 { color: #ffffff !important; }
-      .bg-footer-gradient a { color: #a4b0be; transition: all 0.3s ease; }
-      .bg-footer-gradient a:hover { color: #ffffff; text-decoration: none; }
-      .bg-footer-gradient hr { border-top-color: rgba(255, 255, 255, 0.15); }
+      .bg-footer-solid h5 { color: #ffffff !important; }
+      .bg-footer-solid a { color: #a4b0be; transition: all 0.3s ease; }
+      .bg-footer-solid a:hover { color: #ffffff; text-decoration: none; }
+
+      /* FIX: Embossed Copyright Footer */
+      .footer-copyright-embossed {
+        background-color: #2f3542 !important; /* Dark cloudy grey */
+        box-shadow: inset 0px 6px 12px rgba(0, 0, 0, 0.3) !important; /* Embossed inner shadow */
+        border-top: 1px solid rgba(0,0,0,0.2);
+      }
     </style>
   </head>
   <body>
@@ -56,7 +83,7 @@
       </div>
     </div>
     <div class="page">
-      <header class="section novi-background page-header">
+      <header class="section novi-background page-header header-cloudy">
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
             <div class="rd-navbar-aside-outer">
@@ -83,7 +110,7 @@
                       <div class="unit-body"><a class="link-default" href="#" target="_blank">LinkedIn</a></div>
                     </article>
                     <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-github icon-colorful"></span></div>
+                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-github-circle icon-colorful"></span></div>
                       <div class="unit-body"><a class="link-default" href="#" target="_blank">GitHub</a></div>
                     </article>
                     <a class="button button-primary button-winona" href="contacts.html">Hire Me</a>
@@ -91,6 +118,7 @@
                 </div>
               </div>
             </div>
+            <!-- Removed the problematic inline class, styled purely via CSS above -->
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
@@ -193,7 +221,7 @@
       </section>
       
       <!-- Footer -->
-      <footer class="section novi-background footer-advanced bg-footer-gradient" style="padding-bottom: 30px;">
+      <footer class="section novi-background footer-advanced bg-footer-solid" style="padding-bottom: 30px;">
         <div class="footer-advanced-main" style="padding-bottom: 20px;">
           <div class="container">
             <div class="row row-50">
@@ -228,9 +256,7 @@
             </div>
           </div>
         </div>
-
-        <div class="container"><hr style="margin: 15px 0;"></div>
-        <div class="footer-advanced-aside" style="padding-top: 15px; padding-bottom: 15px;">
+        <div class="footer-advanced-aside footer-copyright-embossed" style="padding-top: 20px; padding-bottom: 20px;">
           <div class="container">
             <div class="footer-advanced-layout">
               <a class="brand" href="index.html">
