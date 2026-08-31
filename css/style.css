@@ -17982,4 +17982,32 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
 }
 
+/* =======================================================
+   REPLACEMENT FOR INLINE STYLES (style="...")
+   ======================================================= */
+
+/* Typography Custom Sizes */
+.slider-title-large { font-size: 3rem; }
+.section-title-dark { color: #212121; }
+.post-title-dark { color: #333; }
+
+/* Preloader Brand Styles */
+.preloader-brand-text { font-size: 20px; letter-spacing: 2px; color: #212121; }
+.preloader-brand-dot { font-size: 24px; }
+
+/* Navbar Brand Styles */
+.navbar-brand-text { font-size: 24px; letter-spacing: 2px; color: #212121; }
+.navbar-brand-dot { font-size: 28px; }
+
+/* Footer Brand Styles */
+.footer-brand-text { font-size: 22px; letter-spacing: 2px; }
+.footer-brand-dot { font-size: 26px; }
+
+/* Layout & Spacing */
+.card-rounded { border-radius: 8px; }
+.footer-custom-pb { padding-bottom: 30px; }
+.footer-main-pb { padding-bottom: 20px; }
+.footer-divider { margin: 15px 0; }
+.footer-aside-py { padding-top: 15px; padding-bottom: 15px; }
+}
 
