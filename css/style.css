@@ -17909,3 +17909,61 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .rd-navbar-corporate .rd-navbar-collapse-content .unit-body a:hover {
     color: #007bff !important;
 }
+
+/* =======================================================
+   HEADER MODERN & INTERACTIVE ENHANCEMENTS
+   ======================================================= */
+
+/* 1. Memberikan latar belakang sangat halus pada Top Bar agar tidak terlalu kontras */
+.rd-navbar-corporate .rd-navbar-aside {
+    background-color: #f8fafc !important; /* Warna putih kebiruan sangat lembut */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* 2. Styling Ikon Kontak: Membuatnya berada di dalam lingkaran Soft Blue */
+.rd-navbar-corporate .unit-left .icon-modern {
+    background: #e0f2fe; /* Background biru muda */
+    color: #007bff !important;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi memantul halus */
+}
+
+/* 3. Efek Hover Interaktif saat kursor diarahkan ke Info Kontak */
+.rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .icon-modern {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #ffffff !important;
+    transform: scale(1.15) rotate(5deg); /* Ikon membesar & sedikit miring */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.rd-navbar-corporate .rd-navbar-collapse-content .unit {
+    cursor: pointer; /* Mengubah kursor jadi tangan agar terkesan bisa diklik/interaktif */
+}
+
+.rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .link-default {
+    color: #007bff !important;
+}
+
+/* 4. Upgrade Tombol "Hire Me" menjadi Gradient Modern & Pill-Shape */
+.rd-navbar-corporate .rd-navbar-collapse-content .button-primary {
+    background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
+    border: none !important;
+    border-radius: 30px; /* Ujung melengkung modern */
+    padding: 10px 30px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Efek Hover Tombol Hire Me */
+.rd-navbar-corporate .rd-navbar-collapse-content .button-primary:hover {
+    transform: translateY(-3px); /* Tombol sedikit terangkat */
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+}
