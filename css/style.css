@@ -18033,3 +18033,61 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
 .rd-navbar-corporate .rd-navbar-collapse-content .unit-body a:hover {
     color: #007bff !important;
 }
+
+/* =======================================================
+   MENU BOX ROLLING HOVER EFFECT (SLIM & PROPORTIONAL)
+   ======================================================= */
+
+/* 1. Kembalikan display menu ke horizontal dengan jarak dan lengkungan halus */
+.rd-navbar-corporate .rd-nav-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px !important; /* Memberikan sedikit lengkungan agar lebih elegan */
+    margin: 0 5px !important; /* Memberikan jarak antar kotak menu agar tidak berdempetan */
+    display: inline-block !important; 
+    vertical-align: middle;
+}
+
+/* 2. Menghilangkan garis bawah bawaan */
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
+.rd-navbar-corporate .rd-nav-link:hover,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
+    border-bottom: none !important;
+}
+
+/* 3. Kotak gaib bersembunyi di bawah */
+.rd-navbar-corporate .rd-nav-item::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #007bff 0%, #004b9a 100%) !important;
+    z-index: 1;
+    transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 4. Trigger meluncur naik saat hover/aktif */
+.rd-navbar-corporate .rd-nav-item:hover::before,
+.rd-navbar-corporate .rd-nav-item.active::before {
+    top: 0;
+}
+
+/* 5. MENGATUR UKURAN KOTAK AGAR RAMPING & PROPORSIONAL */
+.rd-navbar-corporate .rd-nav-link {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+    /* KUNCI: Padding atas-bawah 10px, kiri-kanan 20px */
+    padding: 10px 20px !important; 
+    display: block !important; 
+}
+
+/* 6. Warna teks putih saat tersorot */
+.rd-navbar-corporate .rd-nav-item:hover .rd-nav-link,
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item:hover .rd-nav-link,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
+    color: #ffffff !important;
+}
