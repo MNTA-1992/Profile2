@@ -17936,7 +17936,7 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi memantul halus */
 }
 
-/* Efek saat info kontak disorot (hover) - Hanya warnanya yang sedikit menggelap */
+/* 3. Efek saat info kontak disorot (hover) - Hanya warnanya yang sedikit menggelap */
 .rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .icon-modern,
 .rd-navbar-corporate .rd-navbar-collapse-content .unit:hover .link-default {
     background: transparent !important;
@@ -17945,13 +17945,13 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     transform: none !important;
 }
 
-/* 3. MENEBALKAN TEKS MENU UTAMA (HOME, ABOUT ME, PORTFOLIO, CONTACTS) */
+/* 4. MENEBALKAN TEKS MENU UTAMA (HOME, ABOUT ME, PORTFOLIO, CONTACTS) */
 .rd-navbar-corporate .rd-nav-link {
     font-weight: 700 !important; /* Membuat font menjadi BOLD */
     letter-spacing: 0.5px; /* Menambah sedikit jarak agar teks tebal tidak terlalu berdempetan */
 }
 
-/* 4. Upgrade Tombol "Hire Me" (Tetap dipertahankan) */
+/* 5. Upgrade Tombol "Hire Me" (Tetap dipertahankan) */
 .rd-navbar-corporate .rd-navbar-collapse-content .button-primary {
     background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
     border: none !important;
