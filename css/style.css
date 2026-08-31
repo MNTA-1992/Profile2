@@ -17923,15 +17923,17 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     background-color: transparent !important; 
 }
 
-/* 2. Styling Ikon Kontak: KEMBALI SEPERTI SEMULA (Tanpa Background Lingkaran) */
+/* 2. Styling Ikon Kontak: Membuatnya berada di dalam lingkaran Soft Blue */
 .rd-navbar-corporate .unit-left .icon-modern {
-    background: transparent !important; /* Menghilangkan lingkaran putih/solid */
-    color: #007bff !important; 
-    box-shadow: none !important;
-    width: auto;
-    height: auto;
-    border-radius: 0;
-    transform: none !important;
+    background: #e0f2fe; /* Background biru muda */
+    color: #007bff !important;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi memantul halus */
 }
 
 /* Efek saat info kontak disorot (hover) - Hanya warnanya yang sedikit menggelap */
