@@ -18043,7 +18043,7 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
    ======================================================= */
 /* Memangkas tinggi (padding) area menu agar 10% lebih ramping dan menambahkan garis batas */
 .rd-navbar-corporate .rd-navbar-main-outer {
-    padding: 5px 0 !important; /* Mengurangi ruang kosong atas/bawah */
+    padding: 3px 0 !important; /* Mengurangi ruang kosong atas/bawah */
     border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important; /* Garis batas tegas (putih transparan) */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important; /* Bayangan halus ke arah slider */
     background: #192a56; /* Memberikan warna solid awal agar teks slider tidak tembus ke atas */
