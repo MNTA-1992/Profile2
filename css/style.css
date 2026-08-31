@@ -17979,3 +17979,56 @@ html[data-x-mode]:not(.lt-ie10) .not-animated {
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
     background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
 }
+
+/* =======================================================
+   MENU BOX ROLLING HOVER EFFECT
+   ======================================================= */
+
+/* 1. Menjadikan kontainer menu sebagai batasan agar efek tidak bocor (overflow hidden) */
+.rd-navbar-corporate .rd-nav-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px; /* Memberi sudut melengkung elegan pada box */
+    margin: 0 2px; /* Memberi sedikit jarak antar menu */
+}
+
+/* 2. Menghilangkan garis bawah (border-bottom) bawaan template lama */
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
+.rd-navbar-corporate .rd-nav-link:hover,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
+    border-bottom: none !important;
+}
+
+/* 3. Menciptakan "Box" warna yang bersembunyi di bawah teks menu */
+.rd-navbar-corporate .rd-nav-link::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Posisi awal bersembunyi di bawah */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #007bff 0%, #004b9a 100%) !important; /* Gradasi box biru elegan */
+    z-index: -1; /* Harus di bawah teks */
+    /* Animasi kubik bezier untuk memberikan efek rolling yang memantul elastis */
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+
+/* 4. Memicu Box untuk "Roll Up" (menggulung naik) saat di-hover atau pada menu aktif */
+.rd-navbar-corporate .rd-nav-item:hover .rd-nav-link::before,
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link::before {
+    top: 0; /* Box meluncur naik menutupi area menu */
+}
+
+/* 5. Memastikan Teks tetap berada di atas (z-index) dan berubah warna menjadi putih */
+.rd-navbar-corporate .rd-nav-link {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.rd-navbar-corporate .rd-nav-item:hover .rd-nav-link,
+.rd-navbar-corporate .rd-nav-item.active .rd-nav-link,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item:hover .rd-nav-link,
+.navbar-gradient-scroll.rd-navbar--is-stuck .rd-nav-item.active .rd-nav-link {
+    color: #ffffff !important; /* Teks putih kontras di atas box biru */
+}
